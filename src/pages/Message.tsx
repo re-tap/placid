@@ -12,7 +12,7 @@ const Message = () => {
   const authorProfile = {
     name: "Mearaf Tadewos",
     image: "https://avatars.githubusercontent.com/u/44867763?v=4&size=64",
-    image-old: "https://media.licdn.com/dms/image/v2/D4E03AQGzDSXwjSfDUQ/profile-displayphoto-shrink_400_400/B4EZP6sQLcGYAg-/0/1735077726988?e=1755129600&v=beta&t=Bu87_Y6QI1biye1A5FHI9Hccwb1S-ZttG8nLjq4t2_Q",
+    imageOld: "https://media.licdn.com/dms/image/v2/D4E03AQGzDSXwjSfDUQ/profile-displayphoto-shrink_400_400/B4EZP6sQLcGYAg-/0/1735077726988?e=1755129600&v=beta&t=Bu87_Y6QI1biye1A5FHI9Hccwb1S-ZttG8nLjq4t2_Q",
     title: "Founder & Visionary"
   };
 
