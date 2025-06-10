@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent } from '@/components/ui/card';
@@ -97,11 +96,15 @@ This isn't just about building sustainable technology - it's about reimagining t
                   
                   <Button
                     onClick={handleListenToMessage}
-                    className="bg-gradient-to-r from-cyber to-nature hover:opacity-90 text-white"
-                    disabled={isListening}
+                    className={`${
+                      isListening 
+                        ? 'bg-cyber/30 hover:bg-cyber/40' 
+                        : 'bg-gradient-to-r from-cyber to-nature hover:opacity-90'
+                    } text-white transition-all duration-200`}
+                    disabled={false}
                   >
                     <Headphones className="h-4 w-4 mr-2" />
-                    {isListening ? 'Stop Listening' : 'Listen to Message'}
+                    {isListening ? 'Pause Listening' : 'Listen to Message'}
                   </Button>
                 </div>
                 
