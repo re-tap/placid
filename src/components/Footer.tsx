@@ -61,16 +61,10 @@ const Footer: React.FC = () => {
                 <Link to="/discord" className="text-gray-400 hover:text-cyber transition-colors">Discord</Link>
               </li>
               <li>
-                <Link to="/github" className="text-gray-400 hover:text-cyber transition-colors">GitHub</Link>
-              </li>
-              <li>
                 <Link to="/twitter" className="text-gray-400 hover:text-cyber transition-colors">Twitter</Link>
               </li>
               <li>
-                <Link to="/meetups" className="text-gray-400 hover:text-cyber transition-colors">Meetups</Link>
-              </li>
-              <li>
-                <Link to="/forums" className="text-gray-400 hover:text-cyber transition-colors">Forums</Link>
+                <Link to="/meetups" className="text-gray-400 hover:text-cyber transition-colors">Events</Link>
               </li>
             </ul>
           </div>
