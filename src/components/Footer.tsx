@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               <span className="text-lg font-bold text-white">Placid</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Bridging cyberpunk innovation and solarpunk sustainability for a harmonious future.
+            Mixing cyber punk innovation andsolar punk sustainability, with organic science in all productions and designs to create a tech-enabled future in harmony with our natural world.
             </p>
           </div>
           
