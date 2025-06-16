@@ -73,12 +73,6 @@ const Team: React.FC = () => {
       profileLink: "https://www.no1s1labs.org/"
     },
     {
-      name: "comming soon",
-      role: "comming soon",
-      bio: "Specializes in biomimicry and nature-based solutions to complex technological challenges.",
-      profileLink: "https://toolsforthecommons.org/"
-    },
-    {
       name: "Chance ",
       role: "Founder of Suza, ",
       bio: "Creates frameworks for decentralized learning, popup city and charter city initiatives. Highly active in Zuzalu community.",
@@ -91,17 +85,17 @@ const Team: React.FC = () => {
       profileLink: "https://p2pfoundation.net/"
     },
     {
-      name: "Prf. Sead ",
-      role: "Founder of P2P Foundation",
-      bio: "Lecturer and researcher .",
-      profileLink: "https://p2pfoundation.net/"
-    },
-    {
       name: "Eddie Kaggo",
       role: "Founder of Nafasi",
       bio: "Envisions to inspire and lead African youth towards a sustainable future through opensource innovative solutions and community-driven projects.",
       profileLink: "https://x.com/BasedKago"
-    }
+    },
+    {
+      name: "comming soon",
+      role: "comming soon",
+      bio: "Specializes in biomimicry and nature-based solutions to complex technological challenges.",
+      profileLink: ""
+    },
   ];
 
   return (
