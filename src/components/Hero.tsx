@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
       <div className="hero-overlay">
         <div className="text-center max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 glow-text bg-clip-text text-transparent bg-gradient-to-r from-cyber to-nature">
-            Tech, Organic Life, and Sustainable Governance
+            People for Tech, Organic Life, and Sustainable Governance
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
             Mixing cyber punk innovation and solar punk sustainability, with organic science in all productions and designs to create a tech-enabled future in harmony with our natural world.
