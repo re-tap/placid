@@ -61,24 +61,46 @@ const Team: React.FC = () => {
   const isMobile = useIsMobile();
   const teamMembers = [
     {
-      name: "Alex Chen",
-      role: "Tech Visionary",
-      bio: "Combines cyberpunk innovation with deep ecological understanding to forge new paths in sustainable technology."
+      name: "Hugo Mathecowisch",
+      role: "Founder of Tools for the Commons",
+      bio: "Combines technopolitics with economic positionnings to forge new paths in sustainable and inclusive prosperity.",
+      profileLink: "https://toolsforthecommons.org/"
     },
     {
-      name: "Maya Johnson",
-      role: "Environmental Scientist",
-      bio: "Specializes in biomimicry and nature-based solutions to complex technological challenges."
+      name: "Una Wang",
+      role: "Urban Architect, Co-Founder of No1's1 and Zutizerland",
+      bio: " PHD Candidate, who specializes in decentralised housing of a new concept of owned by no one and everyone.",
+      profileLink: "https://www.no1s1labs.org/"
     },
     {
-      name: "Kai Patel",
-      role: "Community Builder",
-      bio: "Creates frameworks for decentralized governance and inclusive community decision-making processes."
+      name: "comming soon",
+      role: "comming soon",
+      bio: "Specializes in biomimicry and nature-based solutions to complex technological challenges.",
+      profileLink: "https://toolsforthecommons.org/"
     },
     {
-      name: "Zoe Williams",
-      role: "Systems Designer",
-      bio: "Envisions and implements integrative systems that balance technological efficiency with natural processes."
+      name: "Chance ",
+      role: "Founder of Suza, ",
+      bio: "Creates frameworks for decentralized learning, popup city and charter city initiatives. Highly active in Zuzalu community.",
+      profileLink: "https://toolsforthecommons.org/"
+    },
+    {
+      name: "Michel Bauwens",
+      role: "Founder of P2P Foundation",
+      bio: "A highly influencial writer, thinker, lecturer and researcher who envisions and implements integrative systems that balance technological efficiency with natural processes.",
+      profileLink: "https://p2pfoundation.net/"
+    },
+    {
+      name: "Prf. Sead ",
+      role: "Founder of P2P Foundation",
+      bio: "Lecturer and researcher .",
+      profileLink: "https://p2pfoundation.net/"
+    },
+    {
+      name: "Eddie Kaggo",
+      role: "Founder of Nafasi",
+      bio: "Envisions to inspire and lead African youth towards a sustainable future through opensource innovative solutions and community-driven projects.",
+      profileLink: "https://x.com/BasedKago"
     }
   ];
 
@@ -91,7 +113,7 @@ const Team: React.FC = () => {
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-nature to-cyber mx-auto rounded-full"></div>
           <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-            Visionaries bringing together diverse expertise to linking technology, ecology, economics, methaphysics, acrchiteture, structural engineering, technopolitics and sociology.
+            Visionaries that support us in together diverse expertise to linking technology, ecology, economics, methaphysics, acrchiteture, structural engineering, technopolitics and sociology.
           </p>
         </div>
 
