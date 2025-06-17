@@ -37,7 +37,7 @@ const Vision: React.FC = () => {
             </div>
             
             <Button className="bg-nature hover:bg-nature/90 text-black flex items-center gap-2 group">
-              Explore Our Projects
+              Explore Projects (Coming Soon)
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
