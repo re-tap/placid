@@ -64,7 +64,7 @@ const Team: React.FC = () => {
       name: "Hugo Mathecowisch",
       role: "Founder of Tools for the Commons",
       bio: "Combines technopolitics with economic positionnings to forge new paths in sustainable and inclusive prosperity.",
-      profileLink: "https://toolsforthecommons.org/"
+      profileLink: "https://www.linkedin.com/in/hugo-mathecowitsch-9447a3213/"
     },
     {
       name: "Una Wang",
@@ -73,10 +73,10 @@ const Team: React.FC = () => {
       profileLink: "https://www.no1s1labs.org/"
     },
     {
-      name: "Chance ",
-      role: "Founder of Suza, ",
+      name: "Chance McAllister",
+      role: "Head of Community, at Plumia, ",
       bio: "Creates frameworks for decentralized learning, popup city and charter city initiatives. Highly active in Zuzalu community.",
-      profileLink: "https://toolsforthecommons.org/"
+      profileLink: "https://www.linkedin.com/in/chance-mcallister-104367b5/"
     },
     {
       name: "Michel Bauwens",
@@ -85,9 +85,9 @@ const Team: React.FC = () => {
       profileLink: "https://p2pfoundation.net/"
     },
     {
-      name: "Eddie Kaggo",
-      role: "Founder of Nafasi",
-      bio: "Envisions to inspire and lead African youth towards a sustainable future through opensource innovative solutions and community-driven projects.",
+      name: "Eddie Kago",
+      role: "Founder of Nafasi, East African Community Head at Coin Base",
+      bio: "Envisions to inspire and lead African youth towards a greater future through opensource innovative solutions and community-driven projects.",
       profileLink: "https://x.com/BasedKago"
     },
     {
