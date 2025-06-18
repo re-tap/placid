@@ -91,10 +91,10 @@ const Team: React.FC = () => {
       profileLink: "https://x.com/BasedKago"
     },
     {
-      name: "comming soon",
-      role: "comming soon",
-      bio: "Specializes in biomimicry and nature-based solutions to complex technological challenges.",
-      profileLink: ""
+      name: "Mark D. Whitaker",
+      role: "Ph.D in Sociology, Researcher and Director",
+      bio: "Research professor at Kyung Hee University, Deputy Director at Center for Global Innovation & Enterprenuership.",
+      profileLink: "https://www.linkedin.com/in/markdouglaswhitaker/"
     },
   ];
 
