@@ -82,7 +82,7 @@ const Team: React.FC = () => {
       name: "Michel Bauwens",
       role: "Founder of P2P Foundation",
       bio: "A highly influencial writer, thinker, lecturer and researcher who envisions and implements integrative systems that balance technological efficiency with natural processes.",
-      profileLink: "https://p2pfoundation.net/"
+      profileLink: "https://www.linkedin.com/in/mbauwens/"
     },
     {
       name: "Eddie Kago",
