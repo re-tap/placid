@@ -58,9 +58,6 @@ const Footer: React.FC = () => {
                 <Link to="/who-is-this-for" className="text-gray-400 hover:text-cyber transition-colors">Who is this for</Link>
               </li>
               <li>
-                <Link to="/discord" className="text-gray-400 hover:text-cyber transition-colors">Discord</Link>
-              </li>
-              <li>
                 <Link to="/twitter" className="text-gray-400 hover:text-cyber transition-colors">Twitter</Link>
               </li>
               <li>
