@@ -86,7 +86,7 @@ const Team: React.FC = () => {
     },
     {
       name: "Eddie Kago",
-      role: "Founder of Nafasi, East African Community Head at Coin Base",
+      role: "Founder at Nafasi, East African Community Head at Coin Base",
       bio: "Envisions to inspire and lead African youth towards a greater future through opensource innovative solutions and community-driven projects.",
       profileLink: "https://x.com/BasedKago"
     },
@@ -94,7 +94,7 @@ const Team: React.FC = () => {
       name: "Mark D. Whitaker",
       role: "Ph.D in Sociology, Researcher and Director",
       bio: "Research professor at Kyung Hee University, Deputy Director at Center for Global Innovation & Enterprenuership.",
-      profileLink: "https://www.linkedin.com/in/markdouglaswhitaker/"
+      profileLink: "https://scholar.google.com/citations?user=f32jUFEAAAAJ&hl=en"
     },
   ];
 
