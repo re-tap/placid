@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -14,10 +13,9 @@ import WhoIsThisFor from "./pages/WhoIsThisFor";
 
 // Import Community pages
 import Discord from "./pages/Community/Discord";
-import GitHub from "./pages/Community/GitHub";
 import Twitter from "./pages/Community/Twitter";
-import Meetups from "./pages/Community/Meetups";
-import Forums from "./pages/Community/Forums";
+import Events from "./pages/Community/Events";
+import Sponsorships from "./pages/Community/Sponsorships";
 
 // Import Legal pages
 import Privacy from "./pages/Legal/Privacy";
@@ -76,10 +74,9 @@ const App = () => {
               
               {/* Community Pages */}
               <Route path="/discord" element={<Discord />} />
-              <Route path="/github" element={<GitHub />} />
               <Route path="/twitter" element={<Twitter />} />
-              <Route path="/meetups" element={<Meetups />} />
-              <Route path="/forums" element={<Forums />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/sponsorships" element={<Sponsorships />} />
               
               {/* Legal Pages */}
               <Route path="/privacy" element={<Privacy />} />

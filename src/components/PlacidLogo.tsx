@@ -2,11 +2,11 @@
 import React from 'react';
 import { Sprout } from 'lucide-react';
 
-interface ReTapLogoProps {
+interface PlacidLogoProps {
   className?: string;
 }
 
-const ReTapLogo: React.FC<ReTapLogoProps> = ({ className = "" }) => {
+const PlacidLogo: React.FC<PlacidLogoProps> = ({ className = "" }) => {
   return (
     <div className={`relative ${className}`}>
       <div className="absolute inset-0 bg-gradient-to-br from-cyber to-nature rounded-full opacity-30 animate-pulse"></div>
@@ -18,4 +18,4 @@ const ReTapLogo: React.FC<ReTapLogoProps> = ({ className = "" }) => {
   );
 };
 
-export default ReTapLogo;
+export default PlacidLogo;

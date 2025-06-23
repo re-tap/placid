@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import ReTapLogo from './ReTapLogo';
+import PlacidLogo from './PlacidLogo';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import SupportModal from './SupportModal';
@@ -16,11 +15,11 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
-              <ReTapLogo className="h-6 w-6 mr-2" />
+              <PlacidLogo className="h-6 w-6 mr-2" />
               <span className="text-lg font-bold text-white">Placid</span>
             </div>
             <p className="text-gray-400 text-sm">
-            Mixing cyber punk innovation andsolar punk sustainability, with organic science in all productions and designs to create a tech-enabled future in harmony with our natural world.
+              Bridging cyberpunk innovation and solarpunk sustainability for a harmonious future.
             </p>
           </div>
           
@@ -61,7 +60,10 @@ const Footer: React.FC = () => {
                 <Link to="/twitter" className="text-gray-400 hover:text-cyber transition-colors">Twitter</Link>
               </li>
               <li>
-                <Link to="/meetups" className="text-gray-400 hover:text-cyber transition-colors">Events</Link>
+                <Link to="/events" className="text-gray-400 hover:text-cyber transition-colors">Events</Link>
+              </li>
+              <li>
+                <Link to="/sponsorships" className="text-gray-400 hover:text-cyber transition-colors">Sponsorships</Link>
               </li>
             </ul>
           </div>

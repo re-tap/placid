@@ -60,7 +60,7 @@ const CoreTeam: React.FC = () => {
 const Team: React.FC = () => {
   const isMobile = useIsMobile();
   const teamMembers = [
-    {
+ {
       name: "Hugo Mathecowisch",
       role: "Founder of Tools for the Commons",
       bio: "Combines technopolitics with economic positionnings to forge new paths in sustainable and inclusive prosperity.",
@@ -107,7 +107,7 @@ const Team: React.FC = () => {
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-nature to-cyber mx-auto rounded-full"></div>
           <p className="mt-6 text-xl text-gray-300 max-w-2xl mx-auto">
-            Visionaries that support us in together diverse expertise to linking technology, ecology, economics, methaphysics, acrchiteture, structural engineering, technopolitics and sociology.
+            Visionaries bringing together diverse expertise to linking technology, ecology, economics, methaphysics, acrchiteture, structural engineering, technopolitics and sociology.
           </p>
         </div>
 

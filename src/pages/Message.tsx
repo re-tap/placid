@@ -16,12 +16,74 @@ const Message = () => {
     title: "Founder & Visionary"
   };
 
-  const messageContent = `Welcome to Placid - a movement that believes technology and nature don't have to be at odds. We're building a future where cyberpunk innovation serves solarpunk ideals, where every digital advancement helps heal our planet rather than harm it.
+  const messageContent = `Welcome to Placid - a movement that believes technology and nature or human experience don't have to be at odds. We're building a future where cyberpunk innovation serves solarpunk ideals, where every digital advancement helps heal our planet rather than harm it.
 
 Our journey began with a simple question: What if we could harness the power of emerging technologies - AI, blockchain, IoT, quantum computing - not just for profit, but for planetary regeneration? What if every smart city could be a green city, every data center could run on renewable energy, and every digital community could foster real-world environmental action?
 
 This isn't just about building sustainable technology - it's about reimagining the relationship between humanity, technology, and nature. We invite you to join us in creating practical solutions that prove a harmonious future is not only possible, but inevitable.`;
 
+
+  const messageContentMearaf = `Imagine a child 
+            A child of your gender, looking out to the world, what would that child will ever want?
+            Peace, stability, safe attachment, unconditional acceptance, adoration, protection from any harm, secure 
+            provision, guide to the truth, emotional harmony, gentleness, people they feel safe with and trust to be 
+            vulnerable or to be attached with safe relatability...
+
+	    Now, imagine an old person; a grand ma or grand pa, what would they desire form the heart? honor, safety of provision 
+            and protection from harm, legacy, happy old age, freedom from health issues, blessed children and grandchildren, 
+            happy long meals with family, connections with good spirited ones, playful times
+
+            Imagine a 50 year old parent,
+            They may desire, stable life, a big family house free of any debt, happy long breakfast and lunch with friends, 
+            families, good neighbors, good schools and good friends for their children, connect, time with family and stress 
+            free fulfilling jobs or business, health, financial stability and conveniences, respect, family full of love and 
+            joy
+
+            Young people, they desire good job, education that makes a difference, fun with friends, friends to grow more 
+            young with :), life partners, financial liberation, learning, reaching their potential, explore the world 
+            - see what is their to be seen, build capacity, establishment, to connect with people, respect and alignments, 
+            partners they can trust for work or for life, wisdom, to learn the truth about life…
+
+            All of these people they are in our life in one way or the other, moreover they are with in us! reached and 
+            experienced through times blessings. They all share the same fundamental elements just in different forms and one 
+            common super element that can summaries the desires, truth! and it comes with different variety when 
+            coupled with something else; as trust, safety, attachment, acceptance, respect, connection, partner, alignment, 
+            happiness, friendship, etc… truths is the less spoken of but the most felt and fundamental anchor of life, that 
+            determines the stability of anything of substance.
+
+            Truth is freedom, is a light... like you can choose to pick items you want under a big bright light.
+
+            If we were to create sustainable anything, we must come to terms with the fact that it is the natural call for 
+            every one to provide with truth in every exchanges (with out risking privacy or safety in edge cases of course),  
+            to seek out the truth in from the infinite wisdom of the nature to land on the efficient remedies in medicine, 
+            governance, sociology, psychology, education, interpersonal connections, productions, ecology, agriculture, 
+            economics, architectures, 
+            transportation, etc.. and to share it with the world.
+
+            There is a proverbs that goes "Its Gods glory in concealing the truth and it’s the king’s honor to seek it out!".
+
+            We will honor our selves by setting out to find the ways, free of a clinch on the old familiar patterns or it 
+            has been done since forever, but with reasonings of causes and effects seen or non-seen guided by truth verified 
+            by occurrences directly of indirectly indicates
+            Within all these Arts and Logies, technology is the aid that facilitates quest in these activities. done and used
+            right, it can be most valuable resource to accelerate, arrivals on desired results and sharing the knowledge 
+            from anywhere in the world and passing it on to the next generation with access to it. Blockchain started the 
+            next cycle in to Neo tech era, by redefining the online human activities by providing the traceability to feed 
+            transparency and then the trust. There is more to do with it as with things to improve it and the things around
+            it.
+
+            AI shoot up the efficiency with machine understanding of humanly things, The grid of electricity and internet is 
+            already powering and connecting the world.
+            There are hardwares and wet-wares too, enhancing how we do things. So, let us come together and learn and find ways 
+            from the infinite wisdom of nature (the universe) to build our next efficient transportation routes, medicines, 
+            ecological architectures, sustainable money and economy, governance models, etc.. and collaborate with technology 
+            to smoothen up the path and accelerate progress or effects. Instead of being led astray by any type of extremism, 
+            let us sit in the simple truth and retap into the natural state; 
+            harmonious existence with coherence, well being, and sustainance.
+            
+            and I came from this future we just imagined together, and thats where are going to with Placid. 
+ `;
+  
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
   };
@@ -111,7 +173,7 @@ This isn't just about building sustainable technology - it's about reimagining t
                 
                 <div className="prose prose-invert max-w-none">
                   <p className="text-lg text-gray-300 leading-relaxed mb-6">
-                    Welcome to Placid - a movement that believes technology and nature don't have to be at odds. 
+                    Welcome to Placid - a movement that believes technology and nature or human experience don't have to be at odds. 
                     We're building a future where cyberpunk innovation serves solarpunk ideals, where every 
                     digital advancement helps heal our planet rather than harm it.
                   </p>
@@ -181,7 +243,6 @@ This isn't just about building sustainable technology - it's about reimagining t
         </Tabs>
       </div>
     </div>
-
   );
 };
 

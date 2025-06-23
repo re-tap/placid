@@ -218,12 +218,12 @@ const WhoIsThisFor = () => {
           <TabsContent value="not-want" className="animate-fade-in">
             <Card className="glass-card border-0">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold text-white mb-6">What We Don't Want</h3>
+                <h3 className="text-2xl font-semibold text-white mb-6">What Don't Fit</h3>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
                     <h4 className="text-lg font-medium text-red-400 mb-3">Greenwashing</h4>
                     <p className="text-gray-300 mb-4">
-                      We reject superficial environmental claims without substantive change. Every project must demonstrate genuine positive impact.
+                      We reject superficial environmental claims without substantive change. Every project must demonstrate genuine positive impact or efforts.
                     </p>
                   </div>
 
@@ -237,7 +237,7 @@ const WhoIsThisFor = () => {
                   <div>
                     <h4 className="text-lg font-medium text-red-400 mb-3">Extractive Practices</h4>
                     <p className="text-gray-300 mb-4">
-                      We oppose business models that extract value from communities and environments without giving back.
+                      We don't appricieate business models or individual traits that extract value from communities and environments without giving back.
                     </p>
                   </div>
 
@@ -258,7 +258,7 @@ const WhoIsThisFor = () => {
                   <div>
                     <h4 className="text-lg font-medium text-red-400 mb-3">Digital Colonialism</h4>
                     <p className="text-gray-300 mb-4">
-                      Imposing technological solutions without community input or ownership perpetuates inequality and dependence.
+                      Imposing technological solutions without community appreaciation perpetuates inequality and dependence.
                     </p>
                   </div>
                 </div>

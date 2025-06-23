@@ -14,9 +14,9 @@ interface SupportModalProps {
 }
 
 const walletAccounts = [
-  { name: 'Bitcoin', address: '3FZbgi29cpjq2GjdwV8eyHuJJnkLtktZc5', network: 'BTC' },
-  { name: 'Ethereum', address: '0x8565d3FFE5E48bd28fc8EBB3586cfBB8c9a6a66A', network: 'ETH' },
-  { name: 'Solana', address: '8XUULdAqe5JrGbDRpA69AjyqYGwqMQaCuKwF68BYZQzf', network: 'SOL' },
+  { name: 'Bitcoin', address: 'coming soon', network: 'BTC' },
+  { name: 'Ethereum & all L2s', address: '0xFF66d3fcBa8EF0c5DC5CF2d2c889abEEbAad37be', network: 'ETH' },
+  { name: 'Solana', address: 'Fn1ibMkM5KL8oBGmD7k3TM5WvfFdWXVqEqeXaDmyU6hJ', network: 'SOL' },
 ];
 
 const SupportModal: React.FC<SupportModalProps> = ({ open, onOpenChange }) => {
@@ -83,7 +83,7 @@ const SupportModal: React.FC<SupportModalProps> = ({ open, onOpenChange }) => {
               <AccordionTrigger className="text-white hover:text-cyber">
                 <div className="flex items-center gap-2">
                   <Wallet className="h-4 w-4" />
-                  <span>Financial Support ($5,402)</span>
+                  <span>Financial Support (Raising for €155,402)</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
@@ -123,7 +123,7 @@ const SupportModal: React.FC<SupportModalProps> = ({ open, onOpenChange }) => {
               <AccordionTrigger className="text-white hover:text-cyber">
                 <div className="flex items-center gap-2">
                   <FileText className="h-4 w-4" />
-                  <span>Knowledge Base Contribution (32)</span>
+                  <span>Knowledge Base Contribution</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
@@ -203,7 +203,10 @@ const SupportModal: React.FC<SupportModalProps> = ({ open, onOpenChange }) => {
             </AccordionItem>
           </Accordion>
 
-          <div className="pt-4 flex justify-center">
+          <div className="pt-4 text-center">
+            <p className="text-nature text-sm mb-4 font-medium">
+              Thank you for your support! 🙏
+            </p>
             <Button 
               className="bg-gradient-to-r from-cyber to-nature hover:opacity-90 text-white w-full"
               onClick={() => onOpenChange(false)}
