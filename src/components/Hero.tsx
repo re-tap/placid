@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
             Tech for Human: Optimised, Sustainable, Healthy, Organic Life 
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
-            Mixing cyber punk innovation and solar punk sustainability, with organic science in all productions and designs to create a tech-enabled future in harmony with our natural world.
+            Remixing cyber punk innovation and solar punk sustainability, with organic science in all productions and protocols to create a tech-enabled future in harmony with our natural world.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <JoinUsButton size="lg" className="bg-gradient-to-r from-cyber to-nature hover:opacity-90 text-white text-lg px-8">
