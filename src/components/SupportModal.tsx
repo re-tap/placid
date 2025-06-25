@@ -83,7 +83,7 @@ const SupportModal: React.FC<SupportModalProps> = ({ open, onOpenChange }) => {
               <AccordionTrigger className="text-white hover:text-cyber">
                 <div className="flex items-center gap-2">
                   <Wallet className="h-4 w-4" />
-                  <span>Financial Support (Raising for €56,302)</span>
+                  <span>Financial Support (Raising for €54,312)</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
