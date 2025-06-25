@@ -46,7 +46,7 @@ const FundraisingBanner = () => {
                 className="bg-gradient-to-r from-nature to-green-600 hover:opacity-90 text-white flex items-center gap-2"
               >
                 <Heart className="h-4 w-4" />
-                Support This Mission (Any amount is super valued!)
+                Support This Mission (Any amount/kind is super valued!)
               </Button>
             </div>
           </div>
