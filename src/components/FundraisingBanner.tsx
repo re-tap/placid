@@ -25,7 +25,7 @@ const FundraisingBanner = () => {
           <div className="text-center space-y-4">
             <div className="flex justify-center items-center gap-2 mb-4">
               <Target className="h-6 w-6 text-cyber animate-pulse" />
-              <h3 className="text-xl font-bold text-white">Kindly Support Our Mission</h3>
+              <h3 className="text-xl font-bold text-white">Support and Become Part of The Mission</h3>
               <Heart className="h-6 w-6 text-nature animate-pulse" />
             </div>
             
