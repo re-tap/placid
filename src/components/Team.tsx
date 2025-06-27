@@ -39,11 +39,12 @@ const CoreTeam: React.FC = () => {
     <Card className="glass-card mb-16 overflow-hidden">
       <CardContent className="p-0">
         <div className="relative">
-          <div className="aspect-video w-full bg-gradient-to-br from-cyber/20 to-nature/20 overflow-hidden">
-            {/* You can replace this with an actual image when available */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-white/50 text-xl">Core Team</p>
-            </div>
+        <div className="aspect-video w-full overflow-hidden">
+            <img 
+              src="../../../public/Team Profile.png" 
+              alt="Core Team Members"
+              className="w-full h-full object-cover"
+        />
           </div>
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
             <h3 className="text-2xl font-bold text-white mb-2">Core Team</h3>
@@ -54,7 +55,7 @@ const CoreTeam: React.FC = () => {
         </div>
       </CardContent>
     </Card>
-  );
+  );  
 };
 
 const Team: React.FC = () => {
