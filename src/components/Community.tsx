@@ -85,7 +85,7 @@ const Community: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-white">Start Here</h4>
-                    <p className="text-gray-400">Begin your journey by exploring our mission and vision from the top <button onClick={scrollToHero} className="text-cyber hover:underline">back to hero section</button></p>
+                    <p className="text-gray-400">Begin your journey by exploring our mission and vision from the top <button onClick={scrollToHero} className="text-cyber hover:underline">the top</button></p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -93,7 +93,7 @@ const Community: React.FC = () => {
                     <span className="text-cyber font-medium">2</span>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Join our Discord community</h4>
+                    <h4 className="font-medium text-white">Join our Telegram community</h4>
                     <p className="text-gray-400">Connect with other members, participate in discussions, and stay updated on events</p>
                   </div>
                 </li>
