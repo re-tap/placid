@@ -38,7 +38,8 @@ const FundraisingBanner = () => {
             </p>
 
             <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-4xl mx-auto">
-              For the first batch supporters who helped us, we prepared gratitude cards and <span className="text-cyber font-bold">Pioneering ID</span>.
+              For the first batch supporters who helped us, we prepared gratitude cards and 
+              <span className="text-cyber font-bold">Pioneering ID</span>.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
