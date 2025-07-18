@@ -16,7 +16,7 @@ interface SupportModalProps {
 const walletAccounts = [
   { name: 'Bitcoin', address: 'coming soon', network: 'BTC' },
   { name: 'Ethereum & all L2s', address: '0xFF66d3fcBa8EF0c5DC5CF2d2c889abEEbAad37be', network: 'ETH' },
-  // { name: 'Solana', address: 'Fn1ibMkM5KL8oBGmD7k3TM5WvfFdWXVqEqeXaDmyU6hJ', network: 'SOL' },
+  { name: 'Solana', address: 'Fn1ibMkM5KL8oBGmD7k3TM5WvfFdWXVqEqeXaDmyU6hJ', network: 'SOL' },
 ];
 
 const SupportModal: React.FC<SupportModalProps> = ({ open, onOpenChange }) => {
@@ -83,7 +83,7 @@ const SupportModal: React.FC<SupportModalProps> = ({ open, onOpenChange }) => {
               <AccordionTrigger className="text-white hover:text-cyber">
                 <div className="flex items-center gap-2">
                   <Wallet className="h-4 w-4" />
-                  <span>Financial Support (Raising for €54,312)</span>
+                  <span>Financial Support (Raising for €155,402)</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent>

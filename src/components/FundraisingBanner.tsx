@@ -25,21 +25,12 @@ const FundraisingBanner = () => {
           <div className="text-center space-y-4">
             <div className="flex justify-center items-center gap-2 mb-4">
               <Target className="h-6 w-6 text-cyber animate-pulse" />
-              <h3 className="text-xl font-bold text-white">Support and Become Part of The Mission</h3>
+              <h3 className="text-xl font-bold text-white">Support Our Mission</h3>
               <Heart className="h-6 w-6 text-nature animate-pulse" />
             </div>
             
             <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-4xl mx-auto">
-              We are raising <span className="text-cyber font-bold">€54,312</span> for the establishment of 
-              decentralized virtual community space, 
-              1st Hacker House and Conference, for scientific researchers, protocol and framework designers, 
-              system builders from across thematics with the goal of serving humanity the best way possible aided with 
-              tech and sustainalbly designed framewords.
-            </p>
-
-            <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-4xl mx-auto">
-              For the first batch supporters who helped us, we prepared gratitude cards and 
-              <span className="text-cyber font-bold">Pioneering ID</span>.
+              We are raising <span className="text-cyber font-bold">€155,402</span> for the comprehensive establishment of decentralized community space for scientific researchers, protocol and framework designers, system builders from across thematics with the goal of serving humanity the best way possible aided with tech and the support of each other.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
@@ -55,7 +46,7 @@ const FundraisingBanner = () => {
                 className="bg-gradient-to-r from-nature to-green-600 hover:opacity-90 text-white flex items-center gap-2"
               >
                 <Heart className="h-4 w-4" />
-                Support This Mission (Any amount/kind is super valued!)
+                Support This Mission
               </Button>
             </div>
           </div>
