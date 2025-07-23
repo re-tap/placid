@@ -1,17 +1,16 @@
-
-import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
-import { z } from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { 
+import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTitle,
   DialogDescription,
-  DialogFooter
-} from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
+  DialogFooter,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -19,24 +18,32 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { User, Mail, Check } from 'lucide-react';
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { User, Mail, Check } from "lucide-react";
+import supabase from "@/lib/supabase";
+import { toast } from "sonner";
 
 // Define the maximum character count for text areas (Twitter-like)
 const MAX_CHARS = 280;
 
 // Form schema with validation
 const formSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
-  email: z.string().email({ message: 'Please enter a valid email address.' }),
-  whyJoin: z.string().max(MAX_CHARS, { 
-    message: `Response must not exceed ${MAX_CHARS} characters.` 
-  }).min(10, { message: 'Please provide at least 10 characters.' }),
-  project: z.string().max(MAX_CHARS, { 
-    message: `Response must not exceed ${MAX_CHARS} characters.` 
-  }).min(10, { message: 'Please provide at least 10 characters.' }),
+  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+  email: z.string().email({ message: "Please enter a valid email address." }),
+  whyJoin: z
+    .string()
+    .max(MAX_CHARS, {
+      message: `Response must not exceed ${MAX_CHARS} characters.`,
+    })
+    .min(10, { message: "Please provide at least 10 characters." }),
+  project: z
+    .string()
+    .max(MAX_CHARS, {
+      message: `Response must not exceed ${MAX_CHARS} characters.`,
+    })
+    .min(10, { message: "Please provide at least 10 characters." }),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -53,21 +60,48 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ open, onOpenChange }) => {
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      name: '',
-      email: '',
-      whyJoin: '',
-      project: '',
+      name: "",
+      email: "",
+      whyJoin: "",
+      project: "",
     },
   });
 
-  const onSubmit = (data: FormValues) => {
-    console.log('Form submitted:', data);
-    // Here you would handle the form submission, e.g., sending data to an API
-    onOpenChange(false);
-    // You could add a success toast here
+  const onSubmit = async (formData: FormValues) => {
+    try {
+      const { data, error } = await supabase
+        .from("join_us")
+        .insert([
+          {
+            name: formData.name,
+            email: formData.email,
+            whyJoin: formData.whyJoin,
+            project: formData.project,
+          },
+        ])
+        .select();
+
+      if (error) {
+        console.error("Submission error:", error.message);
+        toast.error("Submission failed. Please try again.");
+        return;
+      }
+
+      console.log("Submission successful:", data);
+      toast.success("Application submitted successfully!", {
+        duration: 5000,
+        description: "Thank you for your interest in joining us!",
+      });
+      form.reset();
+      onOpenChange(false);
+    } catch (err) {
+      console.error("Unexpected error:", err);
+      toast.error("An unexpected error occurred. Please try again.");
+    }
   };
 
-  const gradientLabelClass = "bg-gradient-to-r from-cyber to-nature bg-clip-text text-transparent font-medium";
+  const gradientLabelClass =
+    "bg-gradient-to-r from-cyber to-nature bg-clip-text text-transparent font-medium";
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -88,7 +122,9 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ open, onOpenChange }) => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className={`flex items-center gap-2 ${gradientLabelClass}`}>
+                  <FormLabel
+                    className={`flex items-center gap-2 ${gradientLabelClass}`}
+                  >
                     <User className="h-4 w-4" /> Full Name
                   </FormLabel>
                   <FormControl>
@@ -104,11 +140,17 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ open, onOpenChange }) => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className={`flex items-center gap-2 ${gradientLabelClass}`}>
+                  <FormLabel
+                    className={`flex items-center gap-2 ${gradientLabelClass}`}
+                  >
                     <Mail className="h-4 w-4" /> Email
                   </FormLabel>
                   <FormControl>
-                    <Input placeholder="your.email@example.com" type="email" {...field} />
+                    <Input
+                      placeholder="your.email@example.com"
+                      type="email"
+                      {...field}
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -120,10 +162,12 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ open, onOpenChange }) => {
               name="whyJoin"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className={gradientLabelClass}>Why do you want to join us?</FormLabel>
+                  <FormLabel className={gradientLabelClass}>
+                    Why do you want to join us?
+                  </FormLabel>
                   <FormControl>
                     <div className="relative">
-                      <Textarea 
+                      <Textarea
                         placeholder="Share your motivation and interest in our mission..."
                         className="resize-none min-h-[100px]"
                         maxLength={MAX_CHARS}
@@ -133,11 +177,13 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ open, onOpenChange }) => {
                           setCharCountWhyJoin(e.target.value.length);
                         }}
                       />
-                      <span className={`absolute bottom-2 right-2 text-xs ${
-                        charCountWhyJoin > MAX_CHARS * 0.9 
-                          ? 'text-red-500' 
-                          : 'text-gray-400'
-                      }`}>
+                      <span
+                        className={`absolute bottom-2 right-2 text-xs ${
+                          charCountWhyJoin > MAX_CHARS * 0.9
+                            ? "text-red-500"
+                            : "text-gray-400"
+                        }`}
+                      >
                         {charCountWhyJoin}/{MAX_CHARS}
                       </span>
                     </div>
@@ -153,11 +199,12 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ open, onOpenChange }) => {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel className={gradientLabelClass}>
-                    Are you building a project or involved in a community that shares similar values?
+                    Are you building a project or involved in a community that
+                    shares similar values?
                   </FormLabel>
                   <FormControl>
                     <div className="relative">
-                      <Textarea 
+                      <Textarea
                         placeholder="If yes, tell us about it. If no, share what you'd like to build..."
                         className="resize-none min-h-[120px]"
                         maxLength={MAX_CHARS}
@@ -167,11 +214,13 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ open, onOpenChange }) => {
                           setCharCountProject(e.target.value.length);
                         }}
                       />
-                      <span className={`absolute bottom-2 right-2 text-xs ${
-                        charCountProject > MAX_CHARS * 0.9 
-                          ? 'text-red-500' 
-                          : 'text-gray-400'
-                      }`}>
+                      <span
+                        className={`absolute bottom-2 right-2 text-xs ${
+                          charCountProject > MAX_CHARS * 0.9
+                            ? "text-red-500"
+                            : "text-gray-400"
+                        }`}
+                      >
                         {charCountProject}/{MAX_CHARS}
                       </span>
                     </div>
@@ -182,8 +231,8 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ open, onOpenChange }) => {
             />
 
             <DialogFooter>
-              <Button 
-                type="submit" 
+              <Button
+                type="submit"
                 className="w-full bg-gradient-to-r from-cyber to-nature hover:opacity-90"
               >
                 <Check className="mr-2 h-4 w-4" /> Submit Application
