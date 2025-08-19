@@ -67,7 +67,7 @@ const Sponsorships = () => {
       name: "Platinum",
       icon: <Zap className="h-6 w-6 text-purple-300" />,
       originalPrice: "$50,000",
-      price: "$35,000",
+      price: "$40,000",
       color: "from-purple-500 to-purple-700", 
       badgeColor: "bg-purple-600",
       features: [
