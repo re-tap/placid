@@ -19,7 +19,7 @@ const Sponsorships = () => {
       name: "Bronze",
       icon: <Shield className="h-6 w-6 text-orange-600" />,
       originalPrice: "$5,000",
-      price: "$2,500",
+      price: "$3,500",
       color: "from-orange-600 to-orange-800",
       badgeColor: "bg-orange-600",
       features: [
@@ -34,7 +34,7 @@ const Sponsorships = () => {
       name: "Silver", 
       icon: <Star className="h-6 w-6 text-gray-400" />,
       originalPrice: "$10,000",
-      price: "$5,000",
+      price: "$7,000",
       color: "from-gray-400 to-gray-600",
       badgeColor: "bg-gray-500",
       features: [
@@ -50,7 +50,7 @@ const Sponsorships = () => {
       name: "Gold",
       icon: <Crown className="h-6 w-6 text-yellow-500" />,
       originalPrice: "$20,000",
-      price: "$10,000", 
+      price: "$16,000", 
       color: "from-yellow-400 to-yellow-600",
       badgeColor: "bg-yellow-500",
       features: [
@@ -67,7 +67,7 @@ const Sponsorships = () => {
       name: "Platinum",
       icon: <Zap className="h-6 w-6 text-purple-300" />,
       originalPrice: "$50,000",
-      price: "$25,000",
+      price: "$40,000",
       color: "from-purple-500 to-purple-700", 
       badgeColor: "bg-purple-600",
       features: [

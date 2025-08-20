@@ -1,43 +1,94 @@
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { FlaskConical, Cpu, Globe, Network } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
+import BlurredNumber from "./BlurredNumber";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+import supabase from "@/lib/supabase";
+import { toast } from "sonner";
 
-import React from 'react';
-import { Button } from '@/components/ui/button';
-import { FlaskConical, Cpu, Globe, Network } from 'lucide-react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Link } from 'react-router-dom';
-import BlurredNumber from './BlurredNumber';
+const newsletterSchema = z.object({
+  email: z.string().email("Please enter a valid email."),
+});
+
+type NewsletterFormValues = z.infer<typeof newsletterSchema>;
 
 const Community: React.FC = () => {
   const communityStats = [
-    { 
-      icon: <Globe className="h-8 w-8 text-cyber" />, 
-      value: "35+", 
+    {
+      icon: <Globe className="h-8 w-8 text-cyber" />,
+      value: "35+",
       label: "Countries",
-      link: "/global-impact"
+      link: "/global-impact",
     },
-    { 
-      icon: <Network className="h-8 w-8 text-cyber" />, 
-      value: "12K+", 
+    {
+      icon: <Network className="h-8 w-8 text-cyber" />,
+      value: "12K+",
       label: "Community Members",
-      link: "/members" 
+      link: "/members",
     },
-    { 
-      icon: <Cpu className="h-8 w-8 text-cyber" />, 
-      value: "120+", 
+    {
+      icon: <Cpu className="h-8 w-8 text-cyber" />,
+      value: "120+",
       label: "Active Projects",
-      link: "/projects" 
+      link: "/projects",
     },
-    { 
-      icon: <FlaskConical className="h-8 w-8 text-cyber" />, 
-      value: "78%", 
+    {
+      icon: <FlaskConical className="h-8 w-8 text-cyber" />,
+      value: "78%",
       label: "Experiments and Researches",
-      link: "/energy-impact" 
+      link: "/energy-impact",
     },
   ];
 
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm<NewsletterFormValues>({
+    resolver: zodResolver(newsletterSchema),
+    defaultValues: {
+      email: "",
+    },
+  });
+
+  const onSubmit = async (data: NewsletterFormValues) => {
+    try {
+      const { error } = await supabase
+        .from("support")
+        .insert([
+          {
+            name: "Newsletter Subscriber",
+            email: data.email,
+          },
+        ])
+        .select();
+
+      if (error) {
+        console.error("Supabase insert error:", error.message);
+        toast.error("Subscription failed. Please try again.");
+        return;
+      }
+
+      toast.success("You're subscribed!", {
+        description: "Thanks for supporting our mission.",
+      });
+
+      reset();
+    } catch (err) {
+      console.error("Unexpected error:", err);
+      toast.error("Something went wrong. Please try again later.");
+    }
+  };
+
   const scrollToHero = () => {
-    const heroSection = document.getElementById('hero');
+    const heroSection = document.getElementById("hero");
     if (heroSection) {
-      heroSection.scrollIntoView({ behavior: 'smooth' });
+      heroSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -49,19 +100,27 @@ const Community: React.FC = () => {
             Join Our Community
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-cyber to-nature mx-auto rounded-full"></div>
+<<<<<<< HEAD
           <p className="mt-6 text-xl text-gray-300 max-w-4xl mx-auto">
             Connect with like-minded individuals and organizations dedicated to creating a sustainable, tech-enabled future in harmony with nature.
+=======
+          <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
+            Connect with like-minded individuals and organizations dedicated to
+            creating a sustainable, tech-enabled future in harmony with nature.
+>>>>>>> 9fa5c2e6aa2616a07488d1b7608c58e83f6416fb
           </p>
         </div>
 
         <div className="grid md:grid-cols-4 gap-6 mb-12">
           {communityStats.map((stat, index) => (
-            <Link to={stat.link} key={index} className="transform transition-transform hover:scale-105">
+            <Link
+              to={stat.link}
+              key={index}
+              className="transform transition-transform hover:scale-105"
+            >
               <Card className="glass-card border-0 overflow-hidden h-full">
                 <CardContent className="p-6 text-center">
-                  <div className="flex justify-center mb-4">
-                    {stat.icon}
-                  </div>
+                  <div className="flex justify-center mb-4">{stat.icon}</div>
                   <div className="text-3xl font-bold text-white mb-1">
                     <BlurredNumber value={stat.value} />
                   </div>
@@ -85,7 +144,20 @@ const Community: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-white">Start Here</h4>
+<<<<<<< HEAD
                     <p className="text-gray-400">Begin your journey by exploring our mission and vision from the top the top</p>
+=======
+                    <p className="text-gray-400">
+                      Begin your journey by exploring our mission and vision
+                      from the top{" "}
+                      <button
+                        onClick={scrollToHero}
+                        className="text-cyber hover:underline"
+                      >
+                        back to hero section
+                      </button>
+                    </p>
+>>>>>>> 9fa5c2e6aa2616a07488d1b7608c58e83f6416fb
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -93,8 +165,18 @@ const Community: React.FC = () => {
                     <span className="text-cyber font-medium">2</span>
                   </div>
                   <div>
+<<<<<<< HEAD
                     <h4 className="font-medium text-white">Join our Telegram community</h4>
                     <p className="text-gray-400">Connect with other members, participate in discussions, and stay updated on events</p>
+=======
+                    <h4 className="font-medium text-white">
+                      Join our Discord community
+                    </h4>
+                    <p className="text-gray-400">
+                      Connect with other members, participate in discussions,
+                      and stay updated on events
+                    </p>
+>>>>>>> 9fa5c2e6aa2616a07488d1b7608c58e83f6416fb
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -102,8 +184,12 @@ const Community: React.FC = () => {
                     <span className="text-cyber font-medium">3</span>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Contribute to projects</h4>
-                    <p className="text-gray-400">Share your expertise in one or more of key categories</p>
+                    <h4 className="font-medium text-white">
+                      Contribute to projects
+                    </h4>
+                    <p className="text-gray-400">
+                      Share your expertise in one or more of key categories
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -111,38 +197,63 @@ const Community: React.FC = () => {
                     <span className="text-cyber font-medium">4</span>
                   </div>
                   <div>
-                    <h4 className="font-medium text-white">Attend virtual or local meetups</h4>
-                    <p className="text-gray-400">Participate in workshops, hackathons, and knowledge sharing sessions</p>
+                    <h4 className="font-medium text-white">
+                      Attend virtual or local meetups
+                    </h4>
+                    <p className="text-gray-400">
+                      Participate in workshops, hackathons, and knowledge
+                      sharing sessions
+                    </p>
                   </div>
                 </li>
               </ul>
             </div>
-            
+
             <div className="glass-card p-6 rounded-lg backdrop-blur-md bg-gradient-to-br from-cyber/20 to-nature/20">
-              <h3 className="text-xl font-bold mb-4 text-white">Subscribe to Our Newsletter</h3>
+              <h3 className="text-xl font-bold mb-4 text-white">
+                Subscribe to Our Newsletter
+              </h3>
               <p className="text-white-300 mb-4">
+<<<<<<< HEAD
                 Stay refreshed with our latest developments, inspiring and informative articles.
+=======
+                Stay refreshed with our latest developments, inspiring and
+                informative articles.
+>>>>>>> 9fa5c2e6aa2616a07488d1b7608c58e83f6416fb
               </p>
-              <div className="space-y-4">
-                <input 
-                  type="email" 
-                  placeholder="Your email address" 
-                  className="w-full p-3 rounded-lg glass-card bg-white/5 text-white placeholder:text-cyber-100 focus:outline-none focus:ring-2 focus:ring-cyber"
-                />
-                <Button className="w-full bg-gradient-to-r from-cyber to-nature hover:opacity-90 text-white">
-                  Subscribe
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Your email address"
+                    className="w-full p-3 rounded-lg glass-card bg-white/5 text-white placeholder:text-cyber-100 focus:outline-none focus:ring-2 focus:ring-cyber"
+                    {...register("email")}
+                  />
+                  {errors.email && (
+                    <p className="text-xs text-red-500 mt-1">
+                      {errors.email.message}
+                    </p>
+                  )}
+                </div>
+                <Button
+                  type="submit"
+                  className="w-full bg-gradient-to-r from-cyber to-nature hover:opacity-90 text-white"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Subscribing..." : "Subscribe"}
                 </Button>
-                 <p className="text-xs text-white-400 mt-2">
-                  By subscribing, you agree to our{' '}
+                <p className="text-xs text-white-400 mt-2">
+                  By subscribing, you agree to our{" "}
                   <Link to="/privacy" className="text-cyber hover:underline">
                     Privacy Policy
-                  </Link>{' '}
-                  and{' '}
+                  </Link>{" "}
+                  and{" "}
                   <Link to="/terms" className="text-cyber hover:underline">
                     Terms of Service
-                  </Link>.
+                  </Link>
+                  .
                 </p>
-              </div>
+              </form>
             </div>
           </div>
         </div>
