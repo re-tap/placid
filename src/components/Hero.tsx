@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 glow-text bg-clip-text text-transparent bg-gradient-to-r from-cyber to-nature">
             Tech for Human
           </h1>
-          <h5 className="text-4xl md:text-6xl font-bold mb-6 glow-text bg-clip-text text-transparent bg-gradient-to-r from-cyber to-nature">
+          <h5 className="text-xl md:text-2xl font-medium mb-6 text-gray-300">
             Optimised for Wellness, Safety, Sustainability 
           </h5>
           <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">

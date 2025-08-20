@@ -14,95 +14,69 @@ const Vision: React.FC = () => {
       }}></div>
 
       <div className="section-container relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 glow-text">
-            Our Vision
-          </h2>
-          <div className="h-1 w-24 bg-gradient-to-r from-cyber to-nature mx-auto rounded-full"></div>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold mb-4 text-cyber">Our Vision</h2>
+          <div className="h-1 w-24 bg-gradient-to-r from-cyber to-nature mx-auto rounded-full mb-6"></div>
+          <h3 className="text-2xl font-semibold mb-6 text-gray-200">
+            Building a future where humanity thrives with technology and nature
+          </h3>
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
+            We envision communities where advanced technology enables sustainable living, where digital innovations help regenerate ecosystems, and where human connection to nature is strengthened, not diminished.
+          </p>
+          <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
+            Our goal is to create practical frameworks, tools, and systems that bridge the gap between cyberpunk innovation and solarpunk ideals, proving that technology and ecology can be synergistic forces.
+          </p>
+          <Button className="bg-gradient-to-r from-cyber to-nature hover:opacity-90 text-white mb-12">
+            Explore Our Projects
+          </Button>
         </div>
-
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-white leading-tight">
-              Building a future where humanity thrives <span className="text-cyber">with</span> technology <span className="text-nature">and</span> nature
-            </h3>
-            
-            <div className="space-y-6 mb-8">
+        <div className="mb-12">
+          <h4 className="text-2xl font-semibold mb-8 text-center text-gray-200">Key Sections</h4>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="glass-card p-6 rounded-lg">
+              <Server className="h-12 w-12 text-cyber mb-4" />
+              <h3 className="text-xl font-semibold mb-3 text-cyber">DePins Clean Energy, Internet</h3>
               <p className="text-gray-300">
-                We envision communities where advanced technology enables sustainable living, where digital innovations help regenerate ecosystems, and where human connection to nature is strengthened, not diminished.
-              </p>
-              <p className="text-gray-300">
-                Our goal is to create practical frameworks, tools, and systems that bridge the gap between cyberpunk innovation and solarpunk ideals, proving that technology and ecology can be synergistic forces.
-              </p>
-            </div>
-            
-            <Button className="bg-nature hover:bg-nature/90 text-black flex items-center gap-2 group">
-              Explore Our Projects
-              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </div>
-          
-          <div className="glass-card rounded-xl p-6 backdrop-blur-xl grid grid-cols-2 gap-4">
-            <div className="col-span-2 mb-2">
-              <h4 className="text-xl font-semibold text-white mb-2">Key Sections</h4>
-            </div>
-            
-            <div className="glass-card p-4 rounded-lg backdrop-blur-md">
-              <div className="w-10 h-10 rounded-full bg-cyber/20 flex items-center justify-center mb-3">
-                <Server className="h-5 w-5 text-cyber" />
-              </div>
-              <h5 className="font-medium text-white mb-2">DePins Clean Energy, Internet</h5>
-              <p className="text-sm text-gray-300">
                 Community-owned microgrids that integrate renewable energy with adaptive AI management
               </p>
             </div>
             
-            <div className="glass-card p-4 rounded-lg backdrop-blur-md">
-              <div className="w-10 h-10 rounded-full bg-nature/20 flex items-center justify-center mb-3">
-                <Leaf className="h-5 w-5 text-nature" />
-              </div>
-              <h5 className="font-medium text-white mb-2">Regenerative Agriculture</h5>
-              <p className="text-sm text-gray-300">
+            <div className="glass-card p-6 rounded-lg">
+              <Leaf className="h-12 w-12 text-nature mb-4" />
+              <h3 className="text-xl font-semibold mb-3 text-cyber">Regenerative Agriculture</h3>
+              <p className="text-gray-300">
                 Precision farming systems using IoT and AI to maximize yields while restoring soil health
               </p>
             </div>
             
-            <div className="glass-card p-4 rounded-lg backdrop-blur-md">
-              <div className="w-10 h-10 rounded-full bg-highlight/20 flex items-center justify-center mb-3">
-                <PalmtreeIcon className="h-5 w-5 text-highlight" />
-              </div>
-              <h5 className="font-medium text-white mb-2">Living Architecture</h5>
-              <p className="text-sm text-gray-300">
+            <div className="glass-card p-6 rounded-lg">
+              <PalmtreeIcon className="h-12 w-12 text-nature mb-4" />
+              <h3 className="text-xl font-semibold mb-3 text-cyber">Living Architecture</h3>
+              <p className="text-gray-300">
                 Biophilic urban design that integrates buildings with natural ecosystems
               </p>
             </div>
             
-            <div className="glass-card p-4 rounded-lg backdrop-blur-md">
-              <div className="w-10 h-10 rounded-full bg-cyber/20 flex items-center justify-center mb-3">
-                <Globe className="h-5 w-5 text-cyber" />
-              </div>
-              <h5 className="font-medium text-white mb-2">Sustainable Computing</h5>
-              <p className="text-sm text-gray-300">
-                Energy-efficient blockchain systems, AI, data centers  
+            <div className="glass-card p-6 rounded-lg">
+              <Globe className="h-12 w-12 text-cyber mb-4" />
+              <h3 className="text-xl font-semibold mb-3 text-cyber">Sustainable Computing</h3>
+              <p className="text-gray-300">
+                Energy-efficient blockchain systems, AI, data centers
               </p>
             </div>
-
-            <div className="glass-card p-4 rounded-lg backdrop-blur-md">
-              <div className="w-10 h-10 rounded-full bg-cyber/20 flex items-center justify-center mb-3">
-                <Globe className="h-5 w-5 text-cyber" />
-              </div>
-              <h5 className="font-medium text-white mb-2">Sustainable Governace</h5>
-              <p className="text-sm text-gray-300">
+            
+            <div className="glass-card p-6 rounded-lg">
+              <Globe className="h-12 w-12 text-nature mb-4" />
+              <h3 className="text-xl font-semibold mb-3 text-cyber">Sustainable Governace</h3>
+              <p className="text-gray-300">
                 Nature oriented, sustainable governance models, new models or rethingin of the existing
               </p>
             </div>
-
-            <div className="glass-card p-4 rounded-lg backdrop-blur-md">
-              <div className="w-10 h-10 rounded-full bg-cyber/20 flex items-center justify-center mb-3">
-                <Globe className="h-5 w-5 text-cyber" />
-              </div>
-              <h5 className="font-medium text-white mb-2">Quantum Computing in Security and Efficiency</h5>
-              <p className="text-sm text-gray-300">
+            
+            <div className="glass-card p-6 rounded-lg">
+              <Globe className="h-12 w-12 text-cyber mb-4" />
+              <h3 className="text-xl font-semibold mb-3 text-cyber">Quantum Computing in Security and Efficiency</h3>
+              <p className="text-gray-300">
                 Quantum readiness, the expenses, the current development, implimentations in servers services are running on.
               </p>
             </div>

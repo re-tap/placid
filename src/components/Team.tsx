@@ -98,7 +98,7 @@ const Team: React.FC = () => {
       bio: "Research professor at Kyung Hee University, Deputy Director at Center for Global Innovation & Enterprenuership.",
       profileLink: "https://scholar.google.com/citations?user=f32jUFEAAAAJ&hl=en"
     },
-];
+  ];
 
   return (
     <section id="team" className="bg-black py-20">

@@ -13,14 +13,21 @@ const QuoteSection: React.FC = () => {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="glass-card py-12 px-6 sm:px-10 rounded-2xl">
           <div className="flex justify-center space-x-1 mb-6">
-            {['Vision', 'Innovation', 'Sustainability'].map((word, index) => (
-              <Badge 
-                key={index} 
-                className="bg-gradient-to-r from-nature/60 to-nature/60 backdrop-blur-sm border border-white/10 text-white hover:from-nature/70 hover:to-nature/70"
-              >
-                {word}
-              </Badge>
-            ))}
+            <Badge 
+              className="bg-gradient-to-r from-nature/60 to-nature/60 backdrop-blur-sm border border-white/10 text-white hover:from-nature/70 hover:to-nature/70"
+            >
+              Vision
+            </Badge>
+            <Badge 
+              className="bg-gradient-to-r from-nature/60 to-nature/60 backdrop-blur-sm border border-white/10 text-white hover:from-nature/70 hover:to-nature/70"
+            >
+              Innovation
+            </Badge>
+            <Badge 
+              className="bg-gradient-to-r from-nature/60 to-nature/60 backdrop-blur-sm border border-white/10 text-white hover:from-nature/70 hover:to-nature/70"
+            >
+              Sustainability
+            </Badge>
           </div>
           
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-8 bg-gradient-to-r from-cyber to-nature bg-clip-text text-transparent leading-tight">

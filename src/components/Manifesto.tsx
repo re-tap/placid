@@ -15,16 +15,20 @@ const Manifesto: React.FC = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="glass-card p-8 rounded-xl">
-            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              We believe in a future where technology and nature aren't opposing forces, but collaborators in human progress. The cyberpunk ethos of innovation and the solarpunk vision of sustainability aren't mutually exclusive – they're complementary paths toward the same goal.
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              We believe in a future where technology and nature aren't opposing forces, but collaborators in human progress. 
+              The cyberpunk ethos of innovation and the solarpunk vision of sustainability aren't mutually exclusive – 
+              they're complementary paths toward the same goal.
             </p>
-            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              Our community exists at the intersection of d/acc and e/acc philosophies, acknowledging that responsible technological acceleration can solve environmental challenges while irresponsible development can exacerbate them.
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              Our community exists at the intersection of d/acc and e/acc philosophies, acknowledging that responsible 
+              technological acceleration can solve environmental challenges while irresponsible development can exacerbate them.
             </p>
-            <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              We reject the false choice between technological stagnation and environmental destruction. Instead, we champion a synthesis: technological innovation guided by ecological wisdom and human values.
+            <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              We reject the false choice between technological stagnation and environmental destruction. Instead, we champion 
+              a synthesis: technological innovation guided by ecological wisdom and human values.
             </p>
-            <p className="text-lg text-gray-300 mb-6  leading-relaxed">
+            <p className="text-xl text-gray-300 mb-12 leading-relaxed">
               We believe nature is the ultimate best and that technology has to be (& can be) designed to assist learning and attaining maximum natural capacities enhanced by combined guidance of vairous natural and social expertise/researches.
             </p>
           </div>

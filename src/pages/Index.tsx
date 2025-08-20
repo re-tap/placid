@@ -2,7 +2,7 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import CorePhilosophy from '@/components/CorePhilosophy';
+
 import FundraisingBanner from '@/components/FundraisingBanner';
 import ThankYou from '@/components/ThankYou';
 import Manifesto from '@/components/Manifesto';
@@ -19,7 +19,7 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white">
       <Navbar />
       <Hero />
-      <CorePhilosophy />
+      
       <div className="section-container">
         <FundraisingBanner />
       </div>

@@ -30,7 +30,14 @@ const FundraisingBanner = () => {
             </div>
             
             <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-4xl mx-auto">
-              We are raising <span className="text-cyber font-bold">€155,402</span> for the comprehensive establishment of decentralized community space for scientific researchers, protocol and framework designers, system builders from across thematics with the goal of serving humanity the best way possible aided with tech and the support of each other.
+              We are raising €54,312 for the establishment of decentralized virtual community space, 
+              1st Hacker House and Conference, for scientific researchers, protocol and framework designers, 
+              system builders from across thematics with the goal of serving humanity the best way possible 
+              aided with tech and sustainalbly designed framewords.
+            </p>
+            
+            <p className="text-gray-300 text-sm mb-4">
+              For the first batch supporters who helped us, we prepared gratitude cards and Pioneering ID.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
