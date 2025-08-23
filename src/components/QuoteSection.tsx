@@ -14,17 +14,17 @@ const QuoteSection: React.FC = () => {
         <div className="glass-card py-12 px-6 sm:px-10 rounded-2xl">
           <div className="flex justify-center space-x-1 mb-6">
             <Badge 
-              className="bg-gradient-to-r from-nature/60 to-nature/60 backdrop-blur-sm border border-white/10 text-white hover:from-nature/70 hover:to-nature/70"
+              className="bg-gradient-to-r from-nature/50 to-nature/80 backdrop-blur-sm border border-white/10 text-white/70 hover:from-nature/70 hover:to-nature/70"
             >
               Vision
             </Badge>
             <Badge 
-              className="bg-gradient-to-r from-nature/60 to-nature/60 backdrop-blur-sm border border-white/10 text-white hover:from-nature/70 hover:to-nature/70"
+              className="bg-gradient-to-r from-nature/80 to-nature/60 backdrop-blur-sm border border-white/10 text-white/70 hover:from-nature/70 hover:to-nature/70"
             >
               Innovation
             </Badge>
             <Badge 
-              className="bg-gradient-to-r from-nature/60 to-nature/60 backdrop-blur-sm border border-white/10 text-white hover:from-nature/70 hover:to-nature/70"
+              className="bg-gradient-to-r from-nature/70 to-nature/50 backdrop-blur-sm border border-white/10 text-white/70 hover:from-nature/70 hover:to-nature/70"
             >
               Sustainability
             </Badge>
@@ -51,7 +51,7 @@ const QuoteSection: React.FC = () => {
             
             <Button 
               variant="outline"
-              className="border-nature text-nature bg-nature/10 hover:bg-nature/20"
+              className="border-cyber text-nature bg-nacyberture/10 hover:bg-cyber/20"
               onClick={() => setIsSupportModalOpen(true)}
             >
               Support this Mission

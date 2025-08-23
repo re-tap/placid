@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
               <span className="text-lg font-bold text-white">Placid</span>
             </div>
             <p className="text-gray-400 text-sm">
-              Bridging cyberpunk innovation and solarpunk sustainability for a harmonious future.
+              Retaping cyberpunk innovation with solarpunk sustainability for a harmonious future.
             </p>
           </div>
           
@@ -51,19 +51,20 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-semibold mb-4">Community</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/message" className="text-gray-400 hover:text-cyber transition-colors">Message</Link>
+                <Link to="/message" className="text-cyber hover:text-cyber transition-colors">Message</Link>
               </li>
               <li>
-                <Link to="/who-is-this-for" className="text-gray-400 hover:text-cyber transition-colors">Who is this for</Link>
+                <Link to="/who-is-this-for" className="text-nature hover:text-cyber transition-colors">Who is this for</Link>
+              </li>
+              
+              <li>
+                <Link to="/sponsorships" className="text-nature hover:text-cyber transition-colors">Sponsorships</Link>
               </li>
               <li>
                 <Link to="/twitter" className="text-gray-400 hover:text-cyber transition-colors">Twitter</Link>
               </li>
               <li>
                 <Link to="/events" className="text-gray-400 hover:text-cyber transition-colors">Events</Link>
-              </li>
-              <li>
-                <Link to="/sponsorships" className="text-gray-400 hover:text-cyber transition-colors">Sponsorships</Link>
               </li>
             </ul>
           </div>

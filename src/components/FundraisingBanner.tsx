@@ -27,17 +27,18 @@ const FundraisingBanner = () => {
               <Target className="h-6 w-6 text-cyber animate-pulse" />
               <h3 className="text-xl font-bold text-white">Support Our Mission</h3>
               <Heart className="h-6 w-6 text-nature animate-pulse" />
+              
             </div>
             
             <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-4xl mx-auto">
-              We are raising €54,312 for the establishment of decentralized virtual community space, 
-              1st Hacker House and Conference, for scientific researchers, protocol and framework designers, 
+              We are raising €254,400 in funding for the establishment of decentralized virtual community space, 
+              1st Hacker House and Productivity Convergencee, for scientific researchers, protocol and framework designers, 
               system builders from across thematics with the goal of serving humanity the best way possible 
-              aided with tech and sustainalbly designed framewords.
+              with tech and sustainalbly designed frameworks.
             </p>
             
             <p className="text-gray-300 text-sm mb-4">
-              For the first batch supporters who helped us, we prepared gratitude cards and Pioneering ID.
+              For the first batch supporters who helped us, we prepared <span className="text-cyber font-bold">gratitude cards</span> and <span className="text-nature font-bold">Pioneer ID</span>. 
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
@@ -46,6 +47,7 @@ const FundraisingBanner = () => {
                 className="bg-gradient-to-r from-cyber to-purple-600 hover:opacity-90 text-white flex items-center gap-2"
               >
                 <Users className="h-4 w-4" />
+                <Heart className="h-6 w-6 text-nature animate-pulse" />
                 View Sponsorship Packages
               </Button>
               <Button 

@@ -4,9 +4,9 @@ import { Heart, Users, Sparkles } from 'lucide-react';
 
 const ThankYou = () => {
   const supporters = [
-    { name: "TechCorp", initial: "TC" },
+    { name: "4 Seas Chiang Mai", initial: "4 Seas" },
+    { name: "Ice Addis", initial: "Ice Addis" },
     { name: "Innovation Labs", initial: "IL" },
-    { name: "Future Systems", initial: "FS" },
     { name: "Green Tech Co", initial: "GT" },
     { name: "Digital Pioneers", initial: "DP" },
     { name: "Sustainable Solutions", initial: "SS" },
@@ -22,7 +22,7 @@ const ThankYou = () => {
             <div className="text-center space-y-6">
               <div className="flex justify-center items-center gap-2 mb-6">
                 <Heart className="h-6 w-6 text-nature animate-pulse" />
-                <h2 className="text-2xl md:text-3xl font-bold text-white">Thank You</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-white/95">Thank You</h2>
                 <Sparkles className="h-6 w-6 text-cyber animate-pulse" />
               </div>
               
@@ -37,7 +37,7 @@ const ThankYou = () => {
               <div className="pt-8">
                 <div className="flex justify-center items-center gap-2 mb-6">
                   <Users className="h-5 w-5 text-cyber" />
-                  <h3 className="text-xl font-semibold text-white">Our Supporters</h3>
+                  <h3 className="text-xl font-semibold text-white/95">Our Supporters</h3>
                 </div>
                 
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4 max-w-4xl mx-auto">
@@ -47,7 +47,7 @@ const ThankYou = () => {
                       className="group relative aspect-square bg-gradient-to-br from-cyber/20 to-nature/20 rounded-lg border border-cyber/30 hover:border-nature/50 transition-all duration-300 flex items-center justify-center cursor-pointer hover:scale-105"
                     >
                       <div className="text-center">
-                        <div className="text-lg font-bold text-white mb-1">
+                        <div className="text-sm font-bold text-nature mb-1">
                           {supporter.initial}
                         </div>
                         <div className="text-xs text-gray-400 opacity-0 group-hover:opacity-100 transition-opacity absolute inset-x-0 bottom-2">

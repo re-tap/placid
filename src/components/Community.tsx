@@ -100,14 +100,14 @@ const Community: React.FC = () => {
             Join Our Community
           </h2>
           <div className="h-1 w-24 bg-gradient-to-r from-cyber to-nature mx-auto rounded-full"></div>
-<<<<<<< HEAD
+
           <p className="mt-6 text-xl text-gray-300 max-w-4xl mx-auto">
             Connect with like-minded individuals and organizations dedicated to creating a sustainable, tech-enabled future in harmony with nature.
-=======
+          </p>  
+
           <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
             Connect with like-minded individuals and organizations dedicated to
             creating a sustainable, tech-enabled future in harmony with nature.
->>>>>>> 9fa5c2e6aa2616a07488d1b7608c58e83f6416fb
           </p>
         </div>
 
@@ -144,9 +144,9 @@ const Community: React.FC = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-white">Start Here</h4>
-<<<<<<< HEAD
+
                     <p className="text-gray-400">Begin your journey by exploring our mission and vision from the top the top</p>
-=======
+
                     <p className="text-gray-400">
                       Begin your journey by exploring our mission and vision
                       from the top{" "}
@@ -157,7 +157,7 @@ const Community: React.FC = () => {
                         back to hero section
                       </button>
                     </p>
->>>>>>> 9fa5c2e6aa2616a07488d1b7608c58e83f6416fb
+
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -165,18 +165,17 @@ const Community: React.FC = () => {
                     <span className="text-cyber font-medium">2</span>
                   </div>
                   <div>
-<<<<<<< HEAD
+
                     <h4 className="font-medium text-white">Join our Telegram community</h4>
                     <p className="text-gray-400">Connect with other members, participate in discussions, and stay updated on events</p>
-=======
+
                     <h4 className="font-medium text-white">
                       Join our Discord community
                     </h4>
                     <p className="text-gray-400">
-                      Connect with other members, participate in discussions,
-                      and stay updated on events
+                      Connect with other members, participate in discussions,and stay updated on events
                     </p>
->>>>>>> 9fa5c2e6aa2616a07488d1b7608c58e83f6416fb
+
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -201,8 +200,7 @@ const Community: React.FC = () => {
                       Attend virtual or local meetups
                     </h4>
                     <p className="text-gray-400">
-                      Participate in workshops, hackathons, and knowledge
-                      sharing sessions
+                      Participate in workshops, hackathons, and knowledge sharing sessions
                     </p>
                   </div>
                 </li>
@@ -214,12 +212,9 @@ const Community: React.FC = () => {
                 Subscribe to Our Newsletter
               </h3>
               <p className="text-white-300 mb-4">
-<<<<<<< HEAD
+
                 Stay refreshed with our latest developments, inspiring and informative articles.
-=======
-                Stay refreshed with our latest developments, inspiring and
-                informative articles.
->>>>>>> 9fa5c2e6aa2616a07488d1b7608c58e83f6416fb
+
               </p>
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div>

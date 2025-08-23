@@ -42,7 +42,7 @@ const CoreTeam: React.FC = () => {
         <div className="relative">
           <div className="aspect-video w-full overflow-hidden">
             <img 
-              src="/lovable-uploads/85e6f970-9ce8-4fd5-952a-ae120a48b0ce.png" 
+              src="/picture-uploads/team-pro.png" 
               alt="Core Team Members"
               className="w-full h-full object-cover"
             />
@@ -50,7 +50,7 @@ const CoreTeam: React.FC = () => {
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
             <h3 className="text-2xl font-bold text-white mb-2">Core Team</h3>
             <p className="text-gray-300">
-              The team working together to bridge technology and sustainability and replicate globally.
+              The team working to blend technology and sustainability and replicate globally.
             </p>
           </div>
         </div>
@@ -71,7 +71,7 @@ const Team: React.FC = () => {
     {
       name: "Una Wang",
       role: "Urban Architect, Co-Founder of No1's1 and Zutizerland",
-      bio: " PHD Candidate, who specializes in decentralised housing of a new concept of owned by no one and everyone.",
+      bio: "PHD Candidate, specializing in decentralised housing of a new concept of owned by no one and everyone.",
       profileLink: "https://www.no1s1labs.org/"
     },
     {
@@ -87,10 +87,10 @@ const Team: React.FC = () => {
       profileLink: "https://www.linkedin.com/in/mbauwens/"
     },
     {
-      name: "Eddie Kago",
-      role: "Founder at Nafasi, East African Community Head at Coin Base",
-      bio: "Envisions to inspire and lead African youth towards a greater future through opensource innovative solutions and community-driven projects.",
-      profileLink: "https://x.com/BasedKago"
+      name: "Samuel Chua",
+      role: "Founder of South Beast Asia, SEA Punk",
+      bio: "Leading the Sea Punk community in South East Asia, focusing on creative design of the future of SEA.",
+      profileLink: "https://scholar.google.com/citations?user=f32jUFEAAAAJ&hl=en"
     },
     {
       name: "Mark D. Whitaker",

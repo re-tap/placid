@@ -18,13 +18,13 @@ const Sponsorships = () => {
     bronze: {
       name: "Bronze",
       icon: <Shield className="h-6 w-6 text-orange-600" />,
-      originalPrice: "$5,000",
-      price: "$3,500",
+      originalPrice: "$8,000",
+      price: "$5,000",
       color: "from-orange-600 to-orange-800",
       badgeColor: "bg-orange-600",
       features: [
         "Logo placement on website footer",
-        "Social media mentions (2 per month)",
+        "Social media mentions (1 per month)",
         "Newsletter inclusion",
         "Community forum sponsor badge",
         "Event program listing"
@@ -33,15 +33,15 @@ const Sponsorships = () => {
     silver: {
       name: "Silver", 
       icon: <Star className="h-6 w-6 text-gray-400" />,
-      originalPrice: "$10,000",
-      price: "$7,000",
+      originalPrice: "$12,000",
+      price: "$8,000",
       color: "from-gray-400 to-gray-600",
       badgeColor: "bg-gray-500",
       features: [
         "All Bronze benefits",
         "Logo on event banners",
         "Dedicated blog post feature",
-        "Social media mentions (4 per month)",
+        "Social media mentions (3 per month)",
         "Speaking opportunity at events",
         "Priority community support"
       ]
@@ -49,8 +49,8 @@ const Sponsorships = () => {
     gold: {
       name: "Gold",
       icon: <Crown className="h-6 w-6 text-yellow-500" />,
-      originalPrice: "$20,000",
-      price: "$16,000", 
+      originalPrice: "$25,000",
+      price: "$18,000", 
       color: "from-yellow-400 to-yellow-600",
       badgeColor: "bg-yellow-500",
       features: [
@@ -58,7 +58,7 @@ const Sponsorships = () => {
         "Homepage logo placement",
         "Keynote speaking opportunity",
         "Co-branded content creation",
-        "Social media mentions (8 per month)",
+        "Social media mentions (5 per month)",
         "Direct access to community leadership",
         "Custom integration opportunities"
       ]
@@ -78,6 +78,8 @@ const Sponsorships = () => {
         "Quarterly strategy sessions",
         "White-label collaboration options",
         "Priority feature development input",
+        "Social media mentions (12 per month)",
+        "Monthly article/blog posts",
         "Executive networking events"
       ]
     }
@@ -94,11 +96,11 @@ const Sponsorships = () => {
       id: 'solarpunk-prize',
       title: 'Fund a Solarpunk Prize for innovation',
       price: '$10K+',
-      description: 'Create an innovation prize focused on sustainable technology solutions'
+      description: 'Create an innovation prize focused on sustainable design or technology solutions'
     },
     {
       id: 'future-city-track',
-      title: 'Design a "Future City Track" at a hackathon',
+      title: 'Design your "Future City Track" for a hackathon',
       price: 'Custom pricing',
       description: 'Sponsor and design a specialized hackathon track focused on urban innovation'
     },
@@ -144,7 +146,7 @@ const Sponsorships = () => {
             Sponsorship Packages
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Partner with Placid to support sustainable technology innovation and reach our engaged community of eco-conscious developers and innovators.
+            Partner with Placid to support innovation that impack generation for the better and to work with our engaged community of sustainability-conscious developers and innovators.
           </p>
           <div className="h-1 w-32 bg-gradient-to-r from-cyber to-nature mx-auto rounded-full"></div>
         </div>
@@ -225,7 +227,7 @@ const Sponsorships = () => {
                           Ready to Partner With Us?
                         </h4>
                         <p className="text-gray-400 mb-6">
-                          Join forward-thinking organizations supporting sustainable technology innovation.
+                          Join global forward-thinking organizations supporting sustainable technology innovation.
                         </p>
                         <Button 
                           onClick={() => handleGetStarted(key)}

@@ -19,18 +19,17 @@ const Index = () => {
     <div className="min-h-screen bg-black text-white">
       <Navbar />
       <Hero />
-      
       <div className="section-container">
         <FundraisingBanner />
       </div>
-      <ThankYou />
       <Manifesto />
       <Values />
       <Vision />
       <Team />
       <Memories />
-      <Community />
       <QuoteSection />
+      <Community />
+      <ThankYou />
       <Footer />
     </div>
   );
