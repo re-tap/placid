@@ -28,7 +28,7 @@ const Values: React.FC = () => {
   const valuesList = [
     {
       title: "Responsible Innovation",
-      description: "We develop technology with careful consideration of its impacts on society and the environment.",
+      description: "We stand for developing technology with careful consideration of its impacts on society and the environment.",
       color: "cyber"
     },
     {
@@ -37,13 +37,13 @@ const Values: React.FC = () => {
       color: "nature"
     },
     {
-      title: "Collaborative Knowledge",
+      title: "Open Knowledge Base",
       description: "We believe in the power of open source, shared knowledge, and collaborative problem-solving.",
       color: "highlight"
     },
     {
       title: "Decentralized Autonomy",
-      description: "We support systems that distribute power and enable communities to determine their own futures.",
+      description: "We support designing of systems that distribute power and enable communities to determine their own futures.",
       color: "cyber"
     },
     {
@@ -57,7 +57,7 @@ const Values: React.FC = () => {
       color: "highlight"
     },
     {
-      title: "Humane Governance",
+      title: "Human-centered Governance",
       description: "Rethinking of governance models attuned with human nature, optimized with tech without destructive side effects.",
       color: "cyber"
     },
