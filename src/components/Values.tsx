@@ -37,13 +37,13 @@ const Values: React.FC = () => {
       color: "nature"
     },
     {
-      title: "Open Knowledge Base",
+      title: "Collaborative Knowledge",
       description: "We believe in the power of open source, shared knowledge, and collaborative problem-solving.",
       color: "highlight"
     },
     {
       title: "Decentralized Autonomy",
-      description: "We support designing of systems that distribute power and enable communities to determine their own futures.",
+      description: "We support systems that distribute power and enable communities to determine their own futures.",
       color: "cyber"
     },
     {

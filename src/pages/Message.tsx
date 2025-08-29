@@ -18,13 +18,10 @@ const Message = () => {
 
   const messageContent = `Welcome to Placid - a movement that believes technology and nature or human experience don't have to be at odds. We're building a future where cyberpunk innovation serves solarpunk ideals, where every digital advancement helps heal our planet rather than harm it.
 
-  Our journey began with a simple question: What if we could harness the power of emerging technologies of AI, blockchain, IoT, quantum computing; not just for profit, but for planetary regeneration? What if every smart city could be a green city, every data center could run on renewable energy, and every digital community could foster real-world environmental action?
+  Our journey began with a simple question: What if we could harness the power of emerging technologies - AI, blockchain, IoT, quantum computing - not just for profit, but for planetary regeneration? What if every smart city could be a green city, every data center could run on renewable energy, and every digital community could foster real-world environmental action?
 
-  This isn't just about building sustainable technology; it's about reimagining the relationship between humanity, technology, and nature. We invite you to join us in creating practical solutions that prove a harmonious future is not only possible, but inevitable.
-
-  Thank you and Welcome!
-  `;
-
+  This isn't just about building sustainable technology - it's about reimagining the relationship between humanity, technology, and nature. We invite you to join us in creating practical solutions that prove a harmonious future is not only possible, but inevitable.`;
+    
   const togglePlay = () => {
     setIsPlaying(!isPlaying);
   };
