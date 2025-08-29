@@ -10,6 +10,8 @@ import GlobalImpact from "./pages/GlobalImpact";
 import BackButton from "./components/BackButton";
 import Message from "./pages/Message";
 import WhoIsThisFor from "./pages/WhoIsThisFor";
+import WhatWeBuild from "./pages/WhatWeBuild";
+import Founder from "./pages/Founder";
 
 // Import Community pages
 import Discord from "./pages/Community/Discord";
@@ -71,6 +73,8 @@ const App = () => {
               <Route path="/energy-impact" element={<EnergyImpact />} />
               <Route path="/message" element={<Message />} />
               <Route path="/who-is-this-for" element={<WhoIsThisFor />} />
+              <Route path="/what-we-build" element={<WhatWeBuild />} />
+              <Route path="/founder" element={<Founder />} />
               
               {/* Community Pages */}
               <Route path="/discord" element={<Discord />} />
