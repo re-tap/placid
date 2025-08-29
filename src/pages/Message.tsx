@@ -13,7 +13,7 @@ const Message = () => {
     name: "Mearaf Tadewos",
     image: "https://avatars.githubusercontent.com/u/44867763?v=4&size=64",
     imageOld: "https://media.licdn.com/dms/image/v2/D4E03AQGzDSXwjSfDUQ/profile-displayphoto-shrink_400_400/B4EZP6sQLcGYAg-/0/1735077726988?e=1755129600&v=beta&t=Bu87_Y6QI1biye1A5FHI9Hccwb1S-ZttG8nLjq4t2_Q",
-    title: "Founder"
+    title: "Founder & Visionary"
   };
 
   const messageContent = `Welcome to Placid - a movement that believes technology and nature or human experience don't have to be at odds. We're building a future where cyberpunk innovation serves solarpunk ideals, where every digital advancement helps heal our planet rather than harm it.

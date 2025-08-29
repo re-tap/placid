@@ -28,7 +28,7 @@ const Values: React.FC = () => {
   const valuesList = [
     {
       title: "Responsible Innovation",
-      description: "We stand for developing technology with careful consideration of its impacts on society and the environment.",
+      description: "We tsnad for developing sustainable technology with careful consideration of its impacts on society and the environment.",
       color: "cyber"
     },
     {
